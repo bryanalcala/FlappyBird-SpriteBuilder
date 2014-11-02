@@ -22,10 +22,10 @@ static const CGFloat maximumYPosition = 380.f;
 
 - (void)didLoadFromCCB {
   _topPipe.physicsBody.collisionType = @"level";
-  _topPipe.physicsBody.sensor = NO;
+  _topPipe.physicsBody.sensor = YES;
 
   _bottomPipe.physicsBody.collisionType = @"level";
-  _bottomPipe.physicsBody.sensor = NO;
+  _bottomPipe.physicsBody.sensor = YES;
 }
 
 - (void)setupRandomPosition {
